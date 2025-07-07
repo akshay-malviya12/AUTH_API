@@ -10,7 +10,8 @@ CREATE TABLE IF NOT EXISTS auth (
       );
 
   <!-- Insert Data in Auth table  for login -->
-  `INSERT INTO price (name, email, password,token) VALUES ("name","Please write the email ID mentioned in the task email" , "bcryt password ", "token value upadte when your login so not change ")`,
+  
+ `INSERT INTO price (name, email, password,token) VALUES ("name","Please write the email ID mentioned in the task email" , "bcryt password ", "token value upadte when your login so not change ")`,
  
  
  <!-- Category Table -->
@@ -20,7 +21,7 @@ CREATE TABLE IF NOT EXISTS auth (
       );
 
  <!-- Service table -->
-      CREATE TABLE IF NOT EXISTS service (
+   CREATE TABLE IF NOT EXISTS service (
         id INT AUTO_INCREMENT PRIMARY KEY,
         service_name VARCHAR(100) NOT NULL, 
         category_id INT NOT NULL,      
@@ -40,10 +41,4 @@ CREATE TABLE IF NOT EXISTS price (
         FOREIGN KEY (service_id) REFERENCES service(id) ON DELETE CASCADE  
       );
 
-
-      
-// UPDATE price SET duration=NorMal, price=10000,type= WHERE service_id= ?
-
-// UPDATE price SET duration=5 Hour,priceType=Hourly,price=10090 WHERE service_id= 1;
-
-// UPDATE price SET duration = '5 Hour',  price = 10090 ,type = 'Hourly'  WHERE service_id = 1;
+    
